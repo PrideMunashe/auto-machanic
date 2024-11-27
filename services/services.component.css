@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light background color */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Features Section */
+.features {
+    background-color: #ffffff; /* White background for the features section */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Spacing below the section */
+}
+
+/* Title Styles */
+.features-title {
+    font-size: 2.5em; /* Increased font size for better emphasis */
+    color: #343a40; /* Darker text color */
+    margin-bottom: 10px;
+    text-align: center; /* Center align the title */
+    font-weight: bold; /* Bold title text */
+}
+
+/* Services List */
+.services-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between each service item */
+}
+
+/* Service Item Styles */
+.service-item {
+    background-color: #f1f1f1; /* Background for each service card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clip child elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition effects */
+    text-align: center; /* Center align text and images */
+    padding: 15px; /* Added padding around the content */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Figure Styles */
+.figure {
+    margin: 0; /* Remove margin */
+    text-align: center; /* Center align text in figures */
+}
+
+/* Centering and Scaling the Image */
+.figure-img {
+    max-width: 30%; /* Reduced width for a smaller image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+}
+
+/* Caption Styles */
+.figure-caption {
+    font-weight: bold; /* Bold caption text */
+    color: #495057; /* Darker grey for captions */
+    padding: 10px; /* Padding around the caption */
+}
+
+/* Service Description Styles */
+.service-item p {
+    padding: 15px; /* Padding around the paragraph */
+    color: #333; /* Darker text color for better readability */
+    line-height: 1.5; /* Line height for better spacing */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block; /* Inline block for button */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 1.1em; /* Increased font size for better visibility */
+    color: #ffffff; /* White text color */
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background color transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+
+    .figure-img {
+        max-width: 50%; /* Adjust width for smaller screens */
+    }
+}
